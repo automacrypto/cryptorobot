@@ -7,6 +7,7 @@ import (
 )
 
 type YamlReaderRepository struct {
+	args []string
 }
 
 func (r YamlReaderRepository) Read(filename string) {
@@ -23,5 +24,4 @@ func (r YamlReaderRepository) Read(filename string) {
 	if unmarshal_error != nil {
 		panic(unmarshal_error)
 	}
-
 }

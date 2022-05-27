@@ -1,2 +1,3 @@
-# cryptorobot
-A bot for widows automation.
+# CryptoRobot
+
+A RPA for application automation.

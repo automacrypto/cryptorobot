@@ -5,5 +5,5 @@ type App struct {
 }
 
 func (app *App) start() {
-
+	// Faz alguma bosta aqui...
 }
