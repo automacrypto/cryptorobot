@@ -1,0 +1,28 @@
+version: 1
+
+settings:
+  name: bombcrypto
+  enabled: true
+
+steps:
+  - step: find_window_by_name
+    enabled: true
+    action:
+      type: window
+      value: bombcrypto
+
+  - step: click_on_window
+    enable: true
+    action:
+      type: mouse
+      value: left_click
+
+  - step: find_sign_in_button
+    enabled: true
+    action:
+      type: detection
+      value: none
+
+  - step: click_on_sign_in
+    enabled: true
+    action: click

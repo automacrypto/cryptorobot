@@ -1,4 +1,4 @@
-package infrastructure
+package helpers
 
 import (
 	"io/ioutil"
@@ -6,11 +6,7 @@ import (
 	"gopkg.in/yaml.v3"
 )
 
-type YamlReaderRepository struct {
-	args []string
-}
-
-func (r YamlReaderRepository) Read(filename string) {
+func ReadYaml(filename string) []byte {
 	file, read_error := ioutil.ReadFile(filename)
 
 	if read_error != nil {
@@ -24,4 +20,6 @@ func (r YamlReaderRepository) Read(filename string) {
 	if unmarshal_error != nil {
 		panic(unmarshal_error)
 	}
+
+	return file
 }

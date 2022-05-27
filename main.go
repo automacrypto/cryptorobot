@@ -2,14 +2,14 @@ package main
 
 import (
 	"fmt"
-	// "github.com/automacrypto/cryptorobot" // ERRO
-	// "src/app" // ERRO
-	// "app" // ERRO
+
+	"github.com/automacrypto/cryptorobot/robot"
 )
 
 func main() {
 	fmt.Println("Hi human")
 
-	// robot := app.App{} // ERRO
-	// robot.start()
+	robot := robot.Robot{}
+
+	robot.Start()
 }
