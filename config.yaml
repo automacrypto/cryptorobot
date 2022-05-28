@@ -1,0 +1,5 @@
+paths: 
+  macros: macros/
+  targets: targets/
+macros:
+  - bombcrypto.yaml

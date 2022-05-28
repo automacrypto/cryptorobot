@@ -1,0 +1,30 @@
+version: 1
+
+application: chrome
+name: Bombcrypto - Google Chrome
+enabled: true
+
+steps:
+  - name: find_window_by_name
+    enabled: true
+    event:
+      type: select_window
+      value: bombcrypto
+
+  - name: click_on_window
+    enable: true
+    event:
+      type: click_on_the_image
+      value: left_click
+
+  - name: find_sign_in_button
+    enabled: true
+    event:
+      type: detection
+      value: none
+
+  - name: click_on_sign_in
+    enabled: true
+    event: 
+      type: click
+      value: left_click
