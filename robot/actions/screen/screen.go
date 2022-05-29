@@ -1,21 +1,29 @@
 package screen
 
-// import (
-// 	"fmt"
-// 	"time"
+import (
+	"image"
+	"time"
 
-// 	"github.com/go-vgo/robotgo"
-// 	"github.com/vcaesar/gcv"
-// )
+	"github.com/go-vgo/robotgo"
+	"github.com/vcaesar/gcv"
+	"github.com/vova616/screenshot"
+)
 
-// func SaveCapture(path string) string {
-// 	now := time.Now().Format("01_02_2006_15:04:05")
-// 	fmt.Println(now)
-// 	filename := path + "/screen_" + now + ".png"
-// 	robotgo.GetHWND()
-// 	return filename
-// }
+func SaveCapture(path string) string {
+	capture, _ := screenshot.CaptureScreen()
+	printscreen := image.Image(capture)
+	now := time.Now().Format("01_02_2006_15:04:05")
 
-// func FindImageFile(fileSearch string, file string) {
-// 	gcv.FindAllImgFile(fileSearch, file)
-// }
+	filename := "printscreen_" + now + ".png"
+	fullpath := path + "/" + filename
+
+	if error := robotgo.Save(printscreen, fullpath); error != nil {
+		panic(error)
+	}
+
+	return filename
+}
+
+func FindImageFile(fileSearch string, file string) {
+	gcv.FindAllImgFile(fileSearch, file)
+}

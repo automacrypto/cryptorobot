@@ -2,27 +2,29 @@ module github.com/automacrypto/cryptorobot
 
 go 1.18
 
-require gopkg.in/yaml.v3 v3.0.1
+require (
+	github.com/go-vgo/robotgo v1.0.0-beta5.2
+	github.com/lxn/win v0.0.0-20210218163916-a377121e959e
+	github.com/vcaesar/bitmap v0.10.0-beta3.1
+	github.com/vcaesar/gcv v0.40.4
+	github.com/vcaesar/imgo v0.30.1
+	github.com/vova616/screenshot v0.0.0-20191005130345-da36db2560ab
+	gopkg.in/yaml.v3 v3.0.1
+)
 
 require (
-	github.com/StackExchange/wmi v1.2.1 // indirect
+	github.com/BurntSushi/xgb v0.0.0-20210121224620-deaf085860bc // indirect
 	github.com/go-ole/go-ole v1.2.6 // indirect
 	github.com/go-vgo/gt v0.31.0 // indirect
-	github.com/go-vgo/robotgo v1.0.0-beta5.2 // indirect
 	github.com/lufia/plan9stats v0.0.0-20211012122336-39d0f177ccd0 // indirect
-	github.com/lxn/win v0.0.0-20210218163916-a377121e959e // indirect
 	github.com/otiai10/gosseract v2.2.1+incompatible // indirect
 	github.com/power-devops/perfstat v0.0.0-20210106213030-5aafc221ea8c // indirect
-	github.com/robotn/gohook v0.31.3 // indirect
 	github.com/robotn/xgb v0.0.0-20190912153532-2cb92d044934 // indirect
 	github.com/robotn/xgbutil v0.0.0-20190912154524-c861d6f87770 // indirect
-	github.com/shirou/gopsutil v3.21.10+incompatible // indirect
 	github.com/shirou/gopsutil/v3 v3.21.12 // indirect
 	github.com/tklauser/go-sysconf v0.3.9 // indirect
 	github.com/tklauser/numcpus v0.3.0 // indirect
-	github.com/vcaesar/gcv v0.40.4 // indirect
 	github.com/vcaesar/gops v0.22.0 // indirect
-	github.com/vcaesar/imgo v0.30.1 // indirect
 	github.com/vcaesar/keycode v0.10.0 // indirect
 	github.com/vcaesar/tt v0.20.0 // indirect
 	github.com/yusufpapurcu/wmi v1.2.2 // indirect
